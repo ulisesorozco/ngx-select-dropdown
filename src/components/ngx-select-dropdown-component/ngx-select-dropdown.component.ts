@@ -65,7 +65,7 @@ export class SelectDropDownComponent implements OnInit {
   /**
    * Selction text to be Displayed
    */
-  public selectedDisplayText: string = "Select";
+  public selectedDisplayText: string = "Select Invoice";
 
   /**
    * Search text
@@ -232,7 +232,7 @@ export class SelectDropDownComponent implements OnInit {
       this.selectedDisplayText = this.selectedItems.length === 1 ? text :
         text + ` + ${this.selectedItems.length - 1} more`;
     } else {
-      this.selectedDisplayText = this.selectedItems.length === 0 ? "Select" : text;
+      this.selectedDisplayText = this.selectedItems.length === 0 ? "Select Invoice" : text;
     }
   }
 }
