@@ -129,6 +129,7 @@ export class SelectDropDownComponent implements OnInit {
         this.availableItems.push(this.selectedItems[0]);
       }
       this.selectedItems = [];
+      this.toggleDropdown = false;
     }
     this.availableItems.splice(index, 1);
     this.selectedItems.push(item);
